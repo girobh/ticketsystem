@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register New User</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Employee Management System</title>
+</head>
+<body>
+    <header>
+        <h1>Employee Management System</h1>
+    </header>
+    <div class="container">
+        <h2>Register New User</h2>
+        <input type="text" id="name" placeholder="Name"><br>
+        <input type="text" id="username" placeholder="Username"><br>
+        <input type="password" id="password" placeholder="Password"><br>
+        <select id="type">
+            <option value="User">User</option>
+            <option value="Admin">Admin</option>
+        </select><br><br>
+        <button onclick="register()">Register</button>
+        <p id="message"></p>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

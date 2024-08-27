@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Employee Management System</h1>
+    </header>
+    <div class="container">
+        <h2>Welcome to the Dashboard</h2>
+        <h2>Add Employee</h2>
+        <form id="employeeForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required><br>
+            <label for="position">Position:</label>
+            <input type="text" id="position" name="position" required><br>
+            <label for="department">Department:</label>
+            <select id="department" required>
+                <option value="Engineering">Engineering</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Sales">Sales</option>
+                <option value="HR">HR</option>
+                <option value="IT">IT</option>
+            </select><br><br>
+            <button type="submit">Add Employee</button>
+            <button onclick="logout()">Logout</button>
+        </form>
+        <h2>Employee List</h2>
+        <ul id="employeeList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
